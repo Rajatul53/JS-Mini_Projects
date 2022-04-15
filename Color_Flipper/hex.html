@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Color Flipper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+        h2 {
+            font-family: 'Open Sans', Roboto;
+        }
+
+        .btn {
+            font-family: 'Open Sans', Roboto;
+            font-size: 20px;
+            border-radius: 7px;
+            margin-top: 20px;
+            border: 1px solid black
+        }
+
+        .btn:hover {
+            color: beige;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!--container-fluid Gives you a full width container -->
+                <div class="navbar-header">
+                    <!--navbar-header  Gives you a navigation header -->
+                    <a class="navbar-brand" href="index.html">Color
+                        Flipper</a>
+                    <!-- navbar-brand used to set logo -->
+                </div>
+                <ul class="nav navbar-nav">
+                    <!--nav navbar-nav used to sets the navigation bar size( either increase or reduce) -->
+                    <li><a href="index.html">Simple
+                        </a></li>
+                    <li class="active"><a href="hex.html">Hex</a></li>
+        </nav>
+
+        <div class="container-fluid"
+            style="background-color: black;color: beige;width:400px;margin-top: 100px;border-radius: 8px;">
+            <h2>Background Colour: <span class="color">#f1f5f8</span></h2>
+        </div>
+        <div class="container-fluid" style="display: flex;justify-content: center;">
+            <button class="btn" type="button" id="btn"><b>Click Me</b></button>
+        </div>
+    </main>
+    <script src="hex.js"></script>
+</body>
+
+
+</html>
